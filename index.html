@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mohyeldeen's Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/app/app.js"></script>
+  </head>
+  <body>
+  <!-- Html Content !-->  
+  <nav class="portofolio-navbar navbar navbar-default">
+        <div class="container">
+          <div class="portofolio-content navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#pnave" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Mohyeldeen's Portfolio</a>
+          </div>
+          <div class="collapse navbar-collapse" id="pnave">
+            <ul class="portofolio-content nav navbar-nav navbar-right">
+              <li><a href="#!me"><i class="fa fa-user-o" aria-hidden="true"></i> Who am I</a></li>
+              <li><a href="#!education"><i class="fa fa-book" aria-hidden="true"></i> Education</a></li>
+              <li><a href="#!skills"><i class="fa fa-code" aria-hidden="true"></i> Skills</a></li>
+              <li><a href="#!experince"><i class="fa fa-cubes" aria-hidden="true"></i> Experience</a></li>
+              <li><a href="#!projects"><i class="fa fa-gears" aria-hidden="true"></i> Projects</a></li>
+              <li><a href="#!/contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div ng-cloak="" ng-view>
+      </div>
+      <br>
+  <!-- JS files !-->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  </body>
+</html>
